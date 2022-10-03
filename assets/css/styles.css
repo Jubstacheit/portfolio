@@ -1,5 +1,41 @@
-p {
-  font-size: 25px;
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetbrainsMono-Italic.ttf") format("truetype");
+  font-weight: auto;
+}
+:root {
+  --font-family: "JetBrains Mono", sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --mobile-font-size: 12px;
+  --line-height: 10px;
+  --transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  transition: var(--transition);
 }
 
 /*# sourceMappingURL=styles.css.map */
