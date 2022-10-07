@@ -48,4 +48,8 @@ nav {
   z-index: 99;
 }
 
+nav a {
+  color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */
