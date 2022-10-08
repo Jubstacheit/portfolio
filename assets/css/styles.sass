@@ -40,16 +40,23 @@ html
 
 body
   font-family: var(--font-family)
-  transition: var(--transition)
 
 nav
+  justify-content: space-around
+  display: flex
+  flex-basis: 100%
+  align-items: center
   background: black
   width: 100%
   height: 110px
   position: sticky
   top: 0
-  display: flex
   z-index: 99
 
 nav a
   color: white
+  text-decoration: none
+
+nav a:hover
+  transition: var(--transition)
+  border-bottom: solid 1px white
