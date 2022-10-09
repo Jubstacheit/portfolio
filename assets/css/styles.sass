@@ -21,7 +21,7 @@
   --bold-font: 700
   --bolder-font: 900
   --mobile-font-size: 12px
-  --line-height: 1.5
+  --line-height: 10px
   --transition: 0.3s
 
 
@@ -33,9 +33,13 @@
 html
   scroll-behavior: smooth
 
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
 body
   font-family: var(--font-family)
-  line-height: var(--line-height)
 
 nav
   justify-content: space-around
@@ -48,18 +52,11 @@ nav
   position: sticky
   top: 0
   z-index: 99
-  line-height: var(--line-height)
 
 nav a
   color: white
-  font-weight: var(--bold-font)
-  font-size: 12px
-  transition: var(--transition)
-  background-color: purple
-  padding: 10px 20px
-  border-radius: 20px
   text-decoration: none
 
 nav a:hover
   transition: var(--transition)
-  text-decoration: underline currentColor solid 2px
+  border-bottom: solid 1px white
