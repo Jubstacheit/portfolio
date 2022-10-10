@@ -33,13 +33,13 @@ body {
 }
 
 nav {
-  justify-content: space-around;
+  justify-content: right;
   display: flex;
   flex-basis: 100%;
   align-items: center;
   background: black;
   width: 100%;
-  height: 110px;
+  height: 100px;
   position: sticky;
   top: 0;
   z-index: 99;
@@ -54,6 +54,8 @@ nav a {
   background-color: purple;
   padding: 10px 20px;
   border-radius: 20px;
+  font-size: 12px;
+  margin: 0 7px;
 }
 
 nav a:hover {
