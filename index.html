@@ -11,17 +11,16 @@
 </head>
 <body>
     <nav>
-        <a href="#">
-            Accueil
-        </a>
-        <a href="#">
-            Qui suis-je
-        </a>
-        <a href="#">
-            Travaux
-        </a>
-        <a href="#">
-            Me contacter
+        <a href="#home" class="active">Accueil</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#news">Qui suis-je</a>
+            <a href="#contact">Projets</a>
+            <a href="#about">Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
         </a>
     </nav>
 </body>
