@@ -11,17 +11,39 @@
 </head>
 <body>
     <nav>
-        <a href="#home" class="active">Accueil</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <a href="#news">Qui suis-je</a>
-            <a href="#contact">Projets</a>
-            <a href="#about">Contact</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+        <a href="#home">Accueil</a>
+        <a href="#bio">Qui suis-je</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
     </nav>
+
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <div class="nav" id="nav">
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#bio">Qui suis-je</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu-bg" id="menu-bg"></div>
+
+
+    <section class="bio" id="bio" style="background-color: red">
+
+    </section>
+    <section class="projects" id="projects" style="background-color: grey">
+
+    </section>
+    <section class="contact" id="contact" style="background-color: blue">
+
+    </section>
 </body>
 </html>
