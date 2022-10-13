@@ -37,7 +37,7 @@ body
   font-family: var(--font-family)
   line-height: var(--line-height)
 
-nav
+/*nav
   justify-content: left
   display: flex
   flex-basis: 100%
@@ -50,7 +50,7 @@ nav
   z-index: 4
   line-height: var(--line-height)
 
-nav a
+/*nav a
   color: white
   font-weight: var(--bold-font)
   text-decoration: underline transparent 2px
@@ -59,7 +59,7 @@ nav a
   border-radius: 20px
   font-size: 10px
 
-nav a:hover
+//nav a:hover
   text-decoration: underline solid currentColor 2px
   transition: var(--transition)
 
@@ -77,16 +77,18 @@ nav a:hover
 .bar
   height: 5px
   width: 100%
-  background-color: #DC052D
+  background-color: #ffffff
   display: block
   border-radius: 5px
   transition: 0.3s ease
 
 #bar1
-  transform: translateY(-4px)
+  transform: translateY(-5px)
+  background-color: #F5A9B8
 
 #bar3
-  transform: translateY(4px)
+  transform: translateY(5px)
+  background-color: #5BCEFA
 
 .nav
   transition: 0.3s ease
@@ -107,12 +109,12 @@ nav a:hover
 .nav li a:hover
   font-weight: bold
 
-.menu-bg, #burger
+.burger-bg, #burger
   top: 0
   left: 0
   position: absolute
 
-.menu-bg
+.burger-bg
   z-index: 1
   width: 0
   height: 0
