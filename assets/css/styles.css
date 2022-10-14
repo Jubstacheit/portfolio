@@ -47,6 +47,7 @@ body {
 .bar {
   width: 100%;
   height: 5px;
+  transition: var(--transition);
 }
 
 #bar1, #bar3 {
@@ -55,6 +56,21 @@ body {
 
 #bar2 {
   background-color: white;
+}
+
+.burger-change .bar {
+  transition: var(--transition);
+}
+.burger-change #bar2 {
+  background-color: transparent;
+}
+.burger-change #bar1 {
+  background-color: #F5A9B8;
+  transform: translateY(12.5px) rotate(45deg);
+}
+.burger-change #bar3 {
+  background-color: #F5A9B8;
+  transform: translateY(-12.5px) rotate(-45deg);
 }
 
 nav {

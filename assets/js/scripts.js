@@ -1,3 +1,4 @@
 function burgerClick() {
-    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("burger").classList.toggle("burger-change");
+    document.getElementById("burger-menu").classList.toggle("burger-menu-change");
 }
