@@ -21,6 +21,8 @@
   --mobile-font-size: 12px;
   --line-height: 1.5;
   --transition: 0.3s;
+  --font-size: 16px;
+  --desk-title-size: 24px;
 }
 
 html {
@@ -73,6 +75,18 @@ body {
   transform: translateY(-12.5px) rotate(-45deg);
 }
 
+.burger-menu {
+  display: none;
+}
+
+.burger-menu-change {
+  display: flex;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #ffffff;
+}
+
 nav {
   display: none;
 }
@@ -112,7 +126,7 @@ nav a {
   transition: var(--transition);
   padding: 7px 14px;
   border-radius: 20px;
-  font-size: 10px;
+  font-size: var(--desk-title-size);
 }
 
 nav a:hover {

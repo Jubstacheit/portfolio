@@ -23,6 +23,8 @@
   --mobile-font-size: 12px
   --line-height: 1.5
   --transition: 0.3s
+  --font-size: 16px
+  --desk-title-size: 24px
 
 
 // Animations //
@@ -37,6 +39,7 @@ body
   font-family: var(--font-family)
   line-height: var(--line-height)
 
+//Burger
 .burger
   position: fixed
   z-index: 5
@@ -59,6 +62,7 @@ body
 #bar2
   background-color: white
 
+//Burger changes after clicking
 .burger-change
   .bar
     transition: var(--transition)
@@ -71,6 +75,17 @@ body
     background-color: #F5A9B8
     transform: translateY(-12.5px) rotate(-45deg)
 
+//Burger menu (hidden by default)
+.burger-menu
+  display: none
+
+//Burger menu after clicking
+.burger-menu-change
+  display: flex
+  position: fixed
+  top: 20px
+  left: 20px
+  background-color: #ffffff
 
 
 nav
@@ -109,7 +124,7 @@ nav a
     transition: var(--transition)
     padding: 7px 14px
     border-radius: 20px
-    font-size: 10px
+    font-size: var(--desk-title-size)
 
 nav a:hover
   text-decoration: underline solid currentColor 2px
