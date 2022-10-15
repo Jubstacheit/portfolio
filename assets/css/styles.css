@@ -18,10 +18,10 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --mobile-font-size: 12px;
   --line-height: 1.5;
   --transition: 0.3s;
-  --font-size: 16px;
+  --font-size: 12px;
+  --title-size: 16px;
   --desk-title-size: 24px;
 }
 
@@ -44,6 +44,7 @@ body {
   width: 40px;
   height: 30px;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .bar {
@@ -81,10 +82,20 @@ body {
 
 .burger-menu-change {
   display: flex;
+  flex-direction: column;
   position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: #ffffff;
+  top: 70px;
+  left: 25px;
+  background-color: black;
+  z-index: 5;
+  height: 300px;
+  justify-content: space-evenly;
+}
+
+.burger-menu-change a {
+  font-size: var(--title-size);
+  text-decoration: none;
+  color: white;
 }
 
 nav {
