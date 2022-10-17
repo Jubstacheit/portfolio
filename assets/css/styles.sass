@@ -46,21 +46,17 @@
 
 @keyframes anim-burger
   0%
-    opacity: 0
     transform: translateX(-100%)
   100%
-    opacity: 1
     transform: translateX(0)
 
 // Anim burger background
 
 @keyframes anim-burger-background
   0%
-    opacity: 0
     transform: scale(.5)
     transform-origin: 0 50%
   100%
-    opacity: 1
     transform: scale(1)
     transform-origin: 0 50%
 
@@ -131,18 +127,23 @@ body
   text-decoration: none
   color: white
 
+//Burger menu background
 .burger-menu-bg
-  display: none
-
-.burger-menu-bg-change
   display: block
+  padding: 10px
   background-color: #000000
   position: fixed
-  top: 10px
-  left: -70px
+  top: 200px
+  left: -100px
+  opacity: 0
   border-radius: 50%
+  transition: var(--transition)
+
+//Burger menu background after clicking
+.burger-menu-bg-change
   padding: 220px
-  animation: anim-burger-background 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+  opacity: 1
+  top: -10px
 
 
 nav
