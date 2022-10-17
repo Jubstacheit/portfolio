@@ -22,7 +22,7 @@
   --transition: 0.3s;
   --font-size: 12px;
   --title-size: 16px;
-  --desk-title-size: 24px;
+  --desk-title-size: 20px;
 }
 
 .anim-burger {
@@ -164,7 +164,7 @@ nav {
   height: 300px;
 }
 
-@media screen and (min-width: 590px) {
+@media screen and (min-width: 860px) {
   nav {
     display: flex;
     flex-basis: 100%;
@@ -193,6 +193,17 @@ nav a {
 nav a:hover {
   text-decoration: underline solid currentColor 2px;
   transition: var(--transition);
+}
+
+@media screen and (min-width: 1280px) {
+  nav {
+    padding: 0 10%;
+  }
+}
+@media screen and (min-width: 1770px) {
+  nav {
+    padding: 0 15%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
