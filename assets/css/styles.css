@@ -182,31 +182,34 @@ nav {
 }
 
 .works {
-  height: 300px;
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
 }
 
 .dev {
-  height: 300px;
+  height: 2000px;
 }
 
 .contact {
-  height: 300px;
+  height: 2000px;
 }
 
 @media screen and (min-width: 860px) {
   nav {
     display: flex;
-    flex-basis: 100%;
     background: black;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
     height: 80px;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 5;
+    z-index: 99;
     line-height: var(--line-height);
     white-space: nowrap;
+    padding: 10px 0;
   }
   nav a {
     color: white;
