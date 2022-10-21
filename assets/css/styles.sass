@@ -25,7 +25,7 @@
   --transition: 0.3s
   --font-size: 12px
   --title-size: 16px
-  --desk-title-size: 20px
+  --desk-title-size: 18px
 
 
 // Animations //
@@ -202,36 +202,48 @@ nav
 @media screen and (min-width: 860px)
   nav
     display: flex
-    background: black
+    flex-direction: column
+    background-color: black
     width: 100%
-    justify-content: space-evenly
+    justify-content: center
     align-items: center
-    height: 80px
     position: fixed
     top: 0
     z-index: 99
-    line-height: var(--line-height)
+    line-height: var(--line-height-title)
+  nav h1
+    line-height: var(--line-height-title)
+    color: white
+    font-weight: var(--bolder-font)
+    text-decoration: none
+    padding: 20px 0 12px
+    font-size: 35px
+  .nav
+    display: flex
+    flex-direction: row
+    width: 100%
+    justify-content: space-evenly
+    align-items: center
+    line-height: var(--line-height-title)
     white-space: nowrap
-    padding: 10px 0
-  nav a
+  .nav a
     color: white
     font-weight: var(--bold-font)
     text-decoration: underline transparent 2px
     transition: var(--transition)
-    padding: 7px 14px
-    border-radius: 20px
+    padding: 10px  15px
     font-size: var(--desk-title-size)
-  nav a:hover
+  .nav a:hover
     text-decoration: underline solid currentColor 2px
     transition: var(--transition)
   .burger
     display: none
 
 @media screen and (min-width: 1280px)
-  nav
+  .nav
     padding: 0 10%
 
 
 @media screen and (min-width: 1770px)
-  nav
+  .nav
     padding: 0 15%
