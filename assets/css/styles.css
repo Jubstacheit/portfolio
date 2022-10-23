@@ -172,7 +172,21 @@ nav {
   padding: 0 0 50px 20px;
 }
 
+.bio::before {
+  content: "";
+  position: absolute;
+  background-size: cover;
+  top: -200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: no-repeat top/500% url("../images/background.png");
+  opacity: 100%;
+  filter: blur(6px) brightness(65%);
+}
+
 .bio h1 {
+  position: relative;
   font-size: 54px;
   font-weight: var(--bolder-font);
   word-wrap: break-word;
@@ -242,10 +256,29 @@ nav {
   .burger {
     display: none;
   }
+  .bio::before {
+    background: no-repeat top/300% url("../images/background.png");
+  }
+}
+@media screen and (min-width: 580px) {
+  .bio::before {
+    background: no-repeat top/400% url("../images/background.png");
+  }
 }
 @media screen and (min-width: 1280px) {
   .nav {
     padding: 0 10%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .bio::before {
+    top: -600px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .bio::before {
+    background: no-repeat top/200% url("../images/background.png");
+    top: -300px;
   }
 }
 @media screen and (min-width: 1770px) {
